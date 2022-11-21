@@ -21,9 +21,11 @@
   }
   ul {
     font-weight: bold;
-    text-align: center;
   }
   ol {
     font-size:1.2em;
     padding-right: 40px;
+  }
+  .category {
+    border-right: 1.5px solid gray;
   }

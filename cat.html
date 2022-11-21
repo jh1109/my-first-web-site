@@ -1,77 +1,29 @@
 <!doctype html>
 <html>
 <head>
-  <title>HCU</title>
+  <title>Happiness is at a cat</title>
   <meta charset="utf-8">
-  <style>
-  body {
-    margin: 0px;
-  }
-  #grid {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-  }
-  /*
-  div {
-    border: 3px solid red;
-  }
-  */
-  h1 {
-    font-size: 3em;
-    text-align: center;
-    padding: 30px;
-    border-bottom: 2px solid gray;
-    margin: 0px;
-  }
-  a {
-    color:black;
-    text-decoration: none;
-  }
-  /*
-  h1 {
-    color:blue;
-  }  왜 이렇게 작성했을때는 declaration이 안되는지?
-  */
-  .emphasis {
-    color:blue;
-  }
-  /*
-  ul, ol {
-    border-right: 1.5px solid gray;
-    width: 140px;
-    margin: 0px;
-    padding-top: 15px
-  }
-  */
-  ul {
-    font-weight: bold;
-    text-align: center;
-  }
-  ol {
-    font-size:1.2em;
-    padding-right: 40px;
-  }
-  @media(min-width:700px) {
-    img {
-      width: 350px;
-    }
-  }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1><a href="index.html" class="emphasis">Happiness is Close to Us</a></h1>
-<ul>
-  <li><a href="introduce.html">INTRODUCE</a></li>
-</ul>
-<ol>
-  <li><a href="1.html">at a meal</a></li>
-  <li><a href="book.html">at a book</a></li>
-  <li><a href="cat.html" style="text-decoration:underline; font-weight:bold;">at a cat</a></li>
-</ol>
-<img src="cat.jpg" width="80%">
-<p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rwb-kOlWxs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
+  <div id="grid">
+    <div class="category">
+      <ul>
+        <li><a href="introduce.html">INTRODUCE</a></li>
+      </ul>
+      <ol>
+        <li><a href="1.html">at a meal</a></li>
+        <li><a href="book.html">at a book</a></li>
+        <li><a href="cat.html" style="text-decoration:underline; font-weight:bold;">at a cat</a></li>
+      </ol>
+    </div>
+    <div style="padding-left: 20px; margin-top:16px;">
+      <img src="cat.jpg" width="80%">
+      <p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rwb-kOlWxs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </p>
+    </div>
 </body>
 </html>
