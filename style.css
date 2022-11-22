@@ -31,3 +31,7 @@
   .category {
     border-right: 1.5px solid gray;
   }
+  #introduce {
+    text-align: center;
+    margin-top: 16px;
+  }

@@ -40,9 +40,6 @@
       padding-top: 15px
     }
     */
-    ul {
-      font-weight: bold;
-    }
     ol {
       font-size:1.2em;
       padding-right: 40px;
@@ -55,16 +52,28 @@
     .category {
       border-right: 1.5px solid gray;
     }
+    #introduce {
+      text-align: center;
+      margin-top: 16px;
+    }
   </style>
 </head>
 
 <body>
   <h1><a href="index.html" class="emphasis">Happiness is Close to Us</a></h1>
+  <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+  ">
+  <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+  ">
   <div id="grid">
     <div class="category">
-      <ul>
-        <li><a href="introduce.html">INTRODUCE</a></li>
-      </ul>
+      <div id="introduce">
+        <a href="introduce.html"><input type="button" value="introduce"></a>
+      </div>
       <ol>
         <li><a href="1.html">at a meal</a></li>
         <li><a href="book.html">at a book</a></li>
