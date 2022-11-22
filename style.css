@@ -11,6 +11,8 @@
     padding: 30px;
     border-bottom: 2px solid gray;
     margin: 0px;
+    background-image: url('sky.jpg');
+    background-size: cover;
   }
   a {
     color:black;
