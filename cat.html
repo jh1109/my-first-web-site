@@ -7,7 +7,22 @@
 </head>
 
 <body>
-  <h1><a href="index.html" class="emphasis">Happiness is Close to Us</a></h1>
+  <div class="special_bg">
+    <div class="group_flex">
+      <img src="cat-removebg.png" height="130px">
+      <h1><a href="index.html" class="emphasis">Happiness is Close to Us</a></h1>
+      <div class="light_area">
+        <input type="button" value="day" onclick="
+          document.querySelector('body').style.backgroundColor = 'white';
+          document.querySelector('body').style.color = 'black';
+        ">
+        <input type="button" value="night" onclick="
+          document.querySelector('body').style.backgroundColor = 'black';
+          document.querySelector('body').style.color = 'white';
+        ">
+      </div>
+    </div>
+  </div>
   <div id="grid">
     <div class="category">
       <div id="introduce">
@@ -20,7 +35,6 @@
       </ol>
     </div>
     <div style="padding-left: 20px; margin-top:16px;">
-      <img src="cat.jpg" width="80%">
       <p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/rwb-kOlWxs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </p>
