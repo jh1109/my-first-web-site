@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Array</h1>
+    <h2>Syntax</h2>
+    <script>
+      var fruit = ["orange", "apple", "banana", "grape"]
+    </script>
+    <h2>get</h2>
+    <script>
+      document.write(fruit[0]);
+      document.write(fruit[1]);
+      document.write(fruit[2]);
+    </script>
+    <h2>count</h2>
+    <script>
+      document.write(fruit.length);
+    </script>
+    <h2>add</h2>
+    <script>
+      fruit.push('kiwi');
+      document.write(fruit.length);
+      document.write(fruit);
+    </script>
+    <h1>Loop</h1>
+    <ul>
+      <script>
+        document.write('<li>1</li>');
+        var i = 0;
+        while(i < 3){
+          document.write('<li>2</li>');
+          document.write('<li>3</li>');
+          i = i + 1;
+        }
+        document.write('<li>4</li>');
+      </script>
+    </ul>
+    <h1>Loop & Array</h1>
+    <ul>
+      <li>orange</li>
+      <li>apple</li>
+      <li>banana</li>
+      <li>grape</li>
+      <li>kiwi</li>
+    </ul>
+    <h2>Fruit</h2>
+    <ul>
+      <script>
+        var i = 0;
+        while(i < fruit.length){
+          document.write('<li>'+fruit[i]+'</li>' );
+          i = i + 1;
+        }
+      </script>
+    </ul>
+  </body>
+</html>
