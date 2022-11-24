@@ -48,3 +48,14 @@
   .light_area {
     margin-top: 10px;
   }
+  .contents {
+    padding-left: 20px;
+    margin-top: 16px;
+  }
+  #grid_2 {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  ul {
+    font-weight: bold;
+  }
