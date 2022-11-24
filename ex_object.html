@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    Object와 Array의 차이점 : Array는 순서가 있지만, Object는 순서의 의미가 없음.
+    <h2>Create</h2>
+    <script>
+      var family = {
+        "mother" : "Rany",
+        "father" : "Gil"
+      };
+      document.write("mother : "+family.mother+'<br>');
+      document.write("father : "+family.father+'<br>');
+      family.daughter1 = "Jenny";
+      document.write("sister : "+family.daughter1+'<br>');
+      family["daughter 2"] = "Ju";
+      document.write("Me : "+family["daughter 2"]+'<br>');
+    </script>
+    <h2>Interate</h2>
+    <script>
+      for(var key in family){ //key 값은 mother, father, daughter1,2 이런 값을 말함
+        document.write(key+" : "+family[key]+'<br>');
+      }
+    </script>
+    <h2>Property & Method</h2>
+    <p>Object에는 문자열, 숫자, 배열, 함수 등을 담을 수 있음.<br>
+    객체에 속한 함수를 Method.<br>
+    객체에 속한 변수(예시에서는 key)를 Property.</p>
+    <script>
+      family.showAll = function(){ //함수의 이름이 showAll이라는 것을 의미함.
+        for(var key in this){
+          document.write(key+" : "+this[key]+'<br>');
+        }
+      }
+      family.showAll();
+    </script>
+  </body>
+</html>

@@ -3,71 +3,33 @@
 <head>
   <title>HCU</title>
   <meta charset="utf-8">
-  <style>
-    body {
-      margin: 0px;
-    }
-    #grid {
-      display: grid;
-      grid-template-columns: 200px 1fr;
-    }
-    h1 {
-      font-size: 3em;
-      text-align: center;
-      padding: 30px 0;
-      margin: 0px;
-    }
-    a {
-      color: black;
-      text-decoration: none;
-    }
-    /*
-    h1 {
-      color:blue;
-    }  왜 이렇게 작성했을때는 declaration이 안되는지?
-    */
-    .emphasis {
-      color:blue;
-    }
-    /*
-    ul, ol {
-      border-right: 1.5px solid gray;
-      width: 140px;
-      margin: 0px;
-      padding-top: 15px
-    }
-    */
-    ol {
-      font-size:1.2em;
-      padding-right: 40px;
-    }
-    @media(min-width:700px) {
-      #grid img {
-        width: 350px;
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function nightDayHandler(self){
+      var target = document.querySelector('body');
+      if(self.value === 'night'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        self.value = 'day';
+        var i = 1;
+        var alist = document.querySelectorAll('a');
+        while(i < alist.length){
+          alist[i].style.color = 'white';
+          i = i + 1;
+        }
+      } else {
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        self.value = 'night';
+        var i = 1;
+        var alist = document.querySelectorAll('a');
+        while(i < alist.length){
+          alist[i].style.color = 'black';
+          i = i + 1;
+        }
       }
     }
-    .category {
-      border-right: 1.5px solid gray;
-    }
-    #introduce {
-      text-align: center;
-      margin-top: 16px;
-    }
-    .special_bg {
-      border-bottom: 2px solid gray;
-      background-image: url('sky.jpg');
-      background-size: cover;
-    }
-    .group_flex {
-      display: grid;
-      grid-template-columns: 150px 1fr 100px;
-      padding: 0 30px;
-      margin: 0 auto;
-    }
-    .light_area {
-      margin-top: 10px;
-    }
-  </style>
+  </script>
 </head>
 
 <body>
@@ -77,28 +39,7 @@
       <h1><a href="index.html" class="emphasis">Happiness is Close to Us</a></h1>
       <div class="light_area">
         <input type="button" value="night" onclick="
-          var target = document.querySelector('body');
-          if(this.value === 'night'){
-            target.style.backgroundColor = 'black';
-            target.style.color = 'white';
-            this.value = 'day';
-            var i = 1;
-            var alist = document.querySelectorAll('a');
-            while(i < alist.length){
-              alist[i].style.color = 'white';
-              i = i + 1;
-            }
-          } else {
-            target.style.backgroundColor = 'white';
-            target.style.color = 'black';
-            this.value = 'night';
-            var i = 1;
-            var alist = document.querySelectorAll('a');
-            while(i < alist.length){
-              alist[i].style.color = 'black';
-              i = i + 1;
-            }
-          }
+        nightDayHandler(this);
           ">
         </div>
       </div>

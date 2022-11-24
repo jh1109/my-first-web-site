@@ -22,6 +22,11 @@
     font-size:1.2em;
     padding-right: 40px;
   }
+  @media(min-width:700px) {
+    #grid img {
+      width: 350px;
+    }
+  }
   .category {
     border-right: 1.5px solid gray;
   }
