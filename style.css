@@ -23,16 +23,16 @@
     padding-right: 40px;
   }
   @media(min-width:700px) {
-    #grid img {
+    #grid .mainContents img {
       width: 350px;
     }
   }
   .category {
-    border-right: 1.5px solid gray;
+    border-right: 2px solid gray;
+    padding-top: 16px;
   }
-  #introduce {
+  .alignCenter {
     text-align: center;
-    margin-top: 16px;
   }
   .special_bg {
     border-bottom: 2px solid gray;
@@ -56,6 +56,14 @@
     display: grid;
     grid-template-columns: 150px 1fr;
   }
-  ul {
+  .bold {
     font-weight: bold;
+  }
+  .boldUnderline{
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  #welcomeBody {
+    background-image: url('sky.jpg');
+    background-size: cover;
   }

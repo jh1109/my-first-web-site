@@ -3,57 +3,21 @@
 <head>
   <title>HCU</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
-  <script>
-    function aSetColor(color){
-      var i = 1;
-      var alist = document.querySelectorAll('a');
-      while(i < alist.length){
-        alist[i].style.color = color;
-        i = i + 1;
-      }
-    }
-    var Body = {
-      setColor:function (color){
-        document.querySelector('body').style.color = color;
-      },
-      setBackgroundColor:function (color){
-        document.querySelector('body').style.backgroundColor = color;
-      }
-    }
-    function nightDayHandler(self){
-      var target = document.querySelector('body');
-      if(self.value === 'night'){
-        Body.setBackgroundColor('black');
-        Body.setColor('white');
-        self.value = 'day';
-        aSetColor('white');
-      } else {
-        Body.setBackgroundColor('white');
-        Body.setColor('black');
-        self.value = 'night';
-        aSetColor('black');
-      }
-    }
-  </script>
 </head>
 
-<body>
+<body id="welcomeBody">
   <div class="special_bg">
     <div class="group_flex">
       <img src="cat-removebg.png" height="130px">
       <h1><a href="index.html" class="emphasis">Happiness is Close to Us</a></h1>
-      <div class="light_area">
-        <input type="button" value="night" onclick="
-        nightDayHandler(this);
-          ">
-        </div>
       </div>
     </div>
   </div>
   <div id="grid">
     <div class="category">
-      <div id="introduce">
+      <div class="alignCenter">
         <a href="introduce.html"><input type="button" value="introduce"></a>
       </div>
       <ol>
@@ -63,9 +27,9 @@
       </ol>
     </div>
     <div class="contents">
-      <div style="text-align: center;">
+      <div class="alignCenter">
         <div style="font-size: 1.5em; font-weight: bold;">Welcome :)</div>
-        <img src="gulum_welcome.jpg" width="70%">
+        <div class="mainContents"><img src="gulum_welcome.jpg" width="70%"></div>
       </div>
     </div>
 </body>
